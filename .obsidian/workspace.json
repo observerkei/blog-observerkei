@@ -11,8 +11,12 @@
             "id": "0c32449330a981c3",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
@@ -27,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md"
               }
             }
           }
@@ -151,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "README.md",
+                "file": "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -174,7 +177,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.168158166125542,
+                  "scale": 0.4868980275241314,
                   "close": true
                 }
               }
@@ -197,15 +200,18 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "e904f594aab4fdf8",
+  "active": "0c32449330a981c3",
   "lastOpenFiles": [
-    "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3 构建和部署博客.md",
-    "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
-    "WB/Develop/WEB/WEB.md",
-    "README.md",
-    "WB/Develop/WEB",
-    "WB/Develop/Develop.md",
+    "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3.2 博客设计部署.md",
+    "WB/Develop/CPP BEA/9.3 构建和部署博客/file/file.md",
+    "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3.1 用户需求分析.md",
     "WB/WB.md",
+    "WB/Develop/Develop.md",
+    "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
+    "README.md",
+    "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3 构建和部署博客.md",
+    "WB/Develop/WEB/WEB.md",
+    "WB/Develop/WEB",
     "index.md",
     "WB",
     "WB/Develop/CPP BEA/9.3 构建和部署博客/file/服务简图.excalidraw.svg",
@@ -220,8 +226,6 @@
     "WB/Develop/CPP BEA/9.3 构建和部署博客/file/cf配置e.png",
     "WB/Develop/CPP BEA/9.3 构建和部署博客/file/cf配置d.png",
     "WB/Develop/CPP BEA/9.3 构建和部署博客/file",
-    "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3.1 用户需求分析.md",
-    "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3.2 博客设计部署.md",
     "WB/Develop/CPP BEA/9.3 构建和部署博客",
     "Develop/CPP BEA/9.3 知识博客/9.3.1 需求分析.md",
     "Develop/CPP BEA/9.3 知识博客/9.3.2 设计部署.md",
