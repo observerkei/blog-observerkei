@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md"
+                "file": "README.md"
               }
             }
           }
@@ -167,7 +167,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
+                "file": "README.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -213,10 +213,10 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "db3b23c3f35f9122",
+  "active": "e904f594aab4fdf8",
   "lastOpenFiles": [
-    "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3.2 博客设计部署.md",
     "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
+    "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3.2 博客设计部署.md",
     "WB/Develop/CPP BEA/9.3 构建和部署博客/file/file.md",
     "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3.1 用户需求分析.md",
     "WB/WB.md",
