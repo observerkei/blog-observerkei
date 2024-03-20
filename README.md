@@ -18,7 +18,7 @@ draft: true
 
 ## 支持本项目和反馈问题
 
-如果您喜欢这个项目，可以给它一个 Star。如果有任何问题或疑问，您可以通过项目的 GitHub 页面提 issue 或者给我发邮件。
+如果您喜欢这个项目，可以给它一个 Star。如果有任何问题或疑问，您可以通过项目的 GitHub 页面提 issues 或者给我发邮件。
 
 ## 效果预览
 
@@ -27,9 +27,7 @@ draft: true
 
 ## 本项目的构建
 
-[博客设计部署](https://blog.observerkei.top/Develop/CPP-BEA/9.3-%E6%9E%84%E5%BB%BA%E5%92%8C%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/9.3.2-%E5%8D%9A%E5%AE%A2%E8%AE%BE%E8%AE%A1%E9%83%A8%E7%BD%B2)
-
-
+[博客设计部署](https://blog.observerkei.top/WB/Develop/CPP-BEA/9.3-%E6%9E%84%E5%BB%BA%E5%92%8C%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/9.3.2-%E5%8D%9A%E5%AE%A2%E8%AE%BE%E8%AE%A1%E9%83%A8%E7%BD%B2)
 
 
 [*****](./index.md)
