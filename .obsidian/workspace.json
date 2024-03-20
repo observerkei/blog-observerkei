@@ -11,12 +11,8 @@
             "id": "0c32449330a981c3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Develop/CPP BEA/9.3 知识博客/9.3.1 需求分析.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           },
           {
@@ -25,13 +21,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Develop/CPP BEA/9.3 知识博客/9.3.2 设计部署.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Develop/CPP BEA/9.3 知识博客/9.3.1 需求分析.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Develop/CPP BEA/9.3 知识博客/9.3.1 需求分析.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Develop/CPP BEA/9.3 知识博客/9.3.1 需求分析.md"
+                "file": "README.md"
               }
             }
           }
@@ -154,7 +151,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Develop/CPP BEA/9.3 知识博客/9.3.1 需求分析.md",
+                "file": "README.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -177,7 +174,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.0000000000000002,
+                  "scale": 1.168158166125542,
                   "close": true
                 }
               }
@@ -200,33 +197,41 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "0c32449330a981c3",
+  "active": "e904f594aab4fdf8",
   "lastOpenFiles": [
-    "Develop/CPP BEA/9.3 知识博客/file/服务简图.excalidraw.md",
-    "Develop/CPP BEA/9.3 知识博客/9.3 知识博客.md",
-    "Develop/CPP BEA/9.3 知识博客/9.3.2 设计部署.md",
-    "Develop/CPP BEA/9.3 知识博客/9.3.1 需求分析.md",
-    "Develop/CPP BEA/CPP BEA.md",
-    "Develop/Develop.md",
+    "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3 构建和部署博客.md",
+    "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
+    "WB/Develop/WEB/WEB.md",
+    "README.md",
+    "WB/Develop/WEB",
+    "WB/Develop/Develop.md",
+    "WB/WB.md",
     "index.md",
+    "WB",
+    "WB/Develop/CPP BEA/9.3 构建和部署博客/file/服务简图.excalidraw.svg",
+    "WB/Develop/CPP BEA/9.3 构建和部署博客/file/服务简图.excalidraw.md",
+    "WB/Develop/CPP BEA/9.3 构建和部署博客/file/国外域名.png",
+    "WB/Develop/CPP BEA/9.3 构建和部署博客/file/国内域名.png",
+    "WB/Develop/CPP BEA/9.3 构建和部署博客/file/nameserver配置.png",
+    "WB/Develop/CPP BEA/9.3 构建和部署博客/file/Obsidian发布方案.png",
+    "WB/Develop/CPP BEA/9.3 构建和部署博客/file/cf配置c.png",
+    "WB/Develop/CPP BEA/9.3 构建和部署博客/file/cf配置g.png",
+    "WB/Develop/CPP BEA/9.3 构建和部署博客/file/cf配置f.png",
+    "WB/Develop/CPP BEA/9.3 构建和部署博客/file/cf配置e.png",
+    "WB/Develop/CPP BEA/9.3 构建和部署博客/file/cf配置d.png",
+    "WB/Develop/CPP BEA/9.3 构建和部署博客/file",
+    "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3.1 用户需求分析.md",
+    "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3.2 博客设计部署.md",
+    "WB/Develop/CPP BEA/9.3 构建和部署博客",
+    "Develop/CPP BEA/9.3 知识博客/9.3.1 需求分析.md",
+    "Develop/CPP BEA/9.3 知识博客/9.3.2 设计部署.md",
+    "WB/Develop/CPP BEA/CPP BEA.md",
     "tmp",
-    "Develop/CPP BEA/9.3 知识博客/file/服务简图.excalidraw.svg",
-    "Develop/CPP BEA/9.3 知识博客/file/国外域名.png",
-    "Develop/CPP BEA/9.3 知识博客/file/国内域名.png",
-    "Develop/CPP BEA/9.3 知识博客/file/Obsidian发布方案.png",
-    "Develop/CPP BEA/9.3 知识博客/file/nameserver配置.png",
-    "Develop/CPP BEA/9.3 知识博客/file/cf配置g.png",
-    "Develop/CPP BEA/9.3 知识博客/file/cf配置f.png",
-    "Develop/CPP BEA/9.3 知识博客/file/cf配置e.png",
-    "Develop/CPP BEA/9.3 知识博客/file/cf配置d.png",
-    "Develop/CPP BEA/9.3 知识博客/file/cf配置c.png",
-    "Develop/CPP BEA/9.3 知识博客/file",
-    "Develop/CPP BEA/9.3 知识博客",
     "Develop/CPP BEA/Develop.md",
-    "Develop/CPP BEA",
+    "WB/Develop/CPP BEA",
     "Develop/New folder",
     "Develop.md",
-    "Develop",
+    "WB/Develop",
     "New folder"
   ]
 }
