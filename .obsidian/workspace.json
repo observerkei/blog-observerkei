@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3.2 博客设计部署.md",
+                "file": "WB/WB.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,14 +37,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3.2 博客设计部署.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "WB/WB.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "WB/WB.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +149,19 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "WB/WB.md"
+              }
+            }
+          },
+          {
+            "id": "1229cf89cebffd96",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -167,7 +178,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "README.md",
+                "file": "WB/WB.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -190,7 +201,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.4868980275241314,
+                  "scale": 0.2477151585679991,
                   "close": true
                 }
               }
@@ -210,19 +221,31 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "workspaces:管理工作区布局": false
     }
   },
-  "active": "e904f594aab4fdf8",
+  "active": "0c32449330a981c3",
   "lastOpenFiles": [
-    "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
-    "README.md",
+    "WB/Develop/Develop.md",
+    "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3 构建和部署博客.md",
+    "WB/Develop/CPP BEA/CPP BEA.md",
+    "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4 Linux工程管理.md",
+    "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4.5 oh-my-push 自定义Shell主题.md",
     "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3.2 博客设计部署.md",
+    "WB/Develop/CPP BEA/1.4 Linux工程管理/image/coral_lean.png",
+    "WB/Develop/CPP BEA/1.4 Linux工程管理/image/omp-ms-terminal.png",
+    "WB/Develop/CPP BEA/1.4 Linux工程管理/image/omp-font-search.png",
+    "WB/Develop/CPP BEA/1.4 Linux工程管理/image/omp-install-front.png",
+    "WB/Develop/CPP BEA/1.4 Linux工程管理/image",
+    "WB/Develop/CPP BEA/1.4 Linux工程管理/New folder",
+    "WB/Develop/CPP BEA/1.4 Linux工程管理",
+    "WB/Develop/CPP BEA/New folder",
+    "README.md",
+    "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
     "WB/Develop/CPP BEA/9.3 构建和部署博客/file/file.md",
     "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3.1 用户需求分析.md",
     "WB/WB.md",
-    "WB/Develop/Develop.md",
-    "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3 构建和部署博客.md",
     "WB/Develop/WEB/WEB.md",
     "WB/Develop/WEB",
     "index.md",
@@ -234,21 +257,13 @@
     "WB/Develop/CPP BEA/9.3 构建和部署博客/file/nameserver配置.png",
     "WB/Develop/CPP BEA/9.3 构建和部署博客/file/Obsidian发布方案.png",
     "WB/Develop/CPP BEA/9.3 构建和部署博客/file/cf配置c.png",
-    "WB/Develop/CPP BEA/9.3 构建和部署博客/file/cf配置g.png",
-    "WB/Develop/CPP BEA/9.3 构建和部署博客/file/cf配置f.png",
-    "WB/Develop/CPP BEA/9.3 构建和部署博客/file/cf配置e.png",
-    "WB/Develop/CPP BEA/9.3 构建和部署博客/file/cf配置d.png",
     "WB/Develop/CPP BEA/9.3 构建和部署博客/file",
     "WB/Develop/CPP BEA/9.3 构建和部署博客",
     "Develop/CPP BEA/9.3 知识博客/9.3.1 需求分析.md",
     "Develop/CPP BEA/9.3 知识博客/9.3.2 设计部署.md",
-    "WB/Develop/CPP BEA/CPP BEA.md",
     "tmp",
     "Develop/CPP BEA/Develop.md",
     "WB/Develop/CPP BEA",
-    "Develop/New folder",
-    "Develop.md",
-    "WB/Develop",
-    "New folder"
+    "Develop.md"
   ]
 }
