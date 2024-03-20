@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WB/WB.md",
+                "file": "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WB/WB.md",
+                "file": "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WB/WB.md",
+                "file": "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WB/WB.md"
+                "file": "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md"
               }
             }
           },
@@ -178,7 +178,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "WB/WB.md",
+                "file": "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -227,6 +227,7 @@
   },
   "active": "0c32449330a981c3",
   "lastOpenFiles": [
+    "WB/WB.md",
     "WB/Develop/Develop.md",
     "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3 构建和部署博客.md",
     "WB/Develop/CPP BEA/CPP BEA.md",
@@ -245,7 +246,6 @@
     "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
     "WB/Develop/CPP BEA/9.3 构建和部署博客/file/file.md",
     "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3.1 用户需求分析.md",
-    "WB/WB.md",
     "WB/Develop/WEB/WEB.md",
     "WB/Develop/WEB",
     "index.md",
