@@ -13,8 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
+                "file": "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4.5 oh-my-push 自定义Shell主题.md",
                 "mode": "source",
+                "backlinks": true,
                 "source": false
               }
             }
@@ -27,6 +28,7 @@
               "state": {
                 "file": "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
                 "mode": "source",
+                "backlinks": true,
                 "source": false
               }
             }
@@ -39,6 +41,7 @@
               "state": {
                 "file": "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3.2 博客设计部署.md",
                 "mode": "source",
+                "backlinks": true,
                 "source": false
               }
             }
@@ -109,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
+                "file": "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4.5 oh-my-push 自定义Shell主题.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
+                "file": "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4.5 oh-my-push 自定义Shell主题.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md"
+                "file": "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4.5 oh-my-push 自定义Shell主题.md"
               }
             }
           },
@@ -178,7 +181,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
+                "file": "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4.5 oh-my-push 自定义Shell主题.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -227,6 +230,7 @@
   },
   "active": "0c32449330a981c3",
   "lastOpenFiles": [
+    "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
     "WB/WB.md",
     "WB/Develop/Develop.md",
     "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3 构建和部署博客.md",
@@ -243,7 +247,6 @@
     "WB/Develop/CPP BEA/1.4 Linux工程管理",
     "WB/Develop/CPP BEA/New folder",
     "README.md",
-    "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
     "WB/Develop/CPP BEA/9.3 构建和部署博客/file/file.md",
     "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3.1 用户需求分析.md",
     "WB/Develop/WEB/WEB.md",
