@@ -4,9 +4,9 @@
 
 ## `CH340` 资料下载
 
-技术手册： [CH340DS1.PDF](https://www.wch.cn/downloads/CH340DS1_PDF.html)
-Linux驱动：[CH341SER\_LINUX.ZIP](https://www.wch.cn/download/CH341SER_LINUX_ZIP.html)
-PCB设计资料：[CH340PCB.ZIP](https://www.wch.cn/downloads/CH340PCB_ZIP.html)
+- 技术手册： [CH340DS1.PDF](https://www.wch.cn/downloads/CH340DS1_PDF.html)
+- Linux驱动：[CH341SER\_LINUX.ZIP](https://www.wch.cn/download/CH341SER_LINUX_ZIP.html)
+- PCB设计资料：[CH340PCB.ZIP](https://www.wch.cn/downloads/CH340PCB_ZIP.html)
 
 
 # `WSL2` 内核编译
