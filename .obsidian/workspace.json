@@ -11,39 +11,8 @@
             "id": "0c32449330a981c3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WB/Develop/Embedded/主从通信工具/WSL2使用CH340进行串口调试.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "db3b23c3f35f9122",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e904f594aab4fdf8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3.2 博客设计部署.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -112,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WB/Develop/Embedded/主从通信工具/WSL2使用CH340进行串口调试.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WB/Develop/Embedded/主从通信工具/WSL2使用CH340进行串口调试.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "WB/Develop/Embedded/主从通信工具/WSL2使用CH340进行串口调试.md"
-              }
+              "state": {}
             }
           },
           {
@@ -181,7 +146,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "WB/Develop/Embedded/主从通信工具/WSL2使用CH340进行串口调试.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -218,56 +182,61 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
+      "command-palette:打开命令面板": false,
+      "workspaces:管理工作区布局": false,
+      "switcher:打开快速切换": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "workspaces:管理工作区布局": false
+      "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
   "active": "0c32449330a981c3",
   "lastOpenFiles": [
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.1 博客用户需求分析.md",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/服务简图.excalidraw.md",
+    "file/服务简图.excalidreaw.md",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.2 低成本公网发布博客的方案.md",
     "WB/Develop/Embedded/主从通信工具/主从通信工具.md",
+    "WB/Develop/Embedded/主从通信工具/WSL2追加Linux内核CH340驱动进行串口通信.md",
+    "README.md",
+    "file",
     "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4.5 oh-my-push 自定义Shell主题.md",
-    "WB/Develop/WEB/WSL2开放局域网访问某个端口的方法.md",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/服务简图.excalidraw.svg",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/国外域名.png",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/国内域名.png",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/Obsidian发布方案.png",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/nameserver配置.png",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/file.md",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/cf配置g.png",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/cf配置f.png",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/cf配置e.png",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/cf配置c.png",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/cf配置d.png",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3 构建和公网部署博客.md",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客",
+    "WB/Develop/WEB/WSL2进行局域网应用层通信的方法.md",
     "WB/WB.md",
     "WB/Develop/Develop.md",
-    "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3 构建和部署博客.md",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3 构建和部署博客.md",
     "WB/Develop/CPP BEA/CPP BEA.md",
     "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4 Linux工程管理.md",
-    "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3.2 博客设计部署.md",
-    "WB/Develop/CPP BEA/1.4 Linux工程管理/image/coral_lean.png",
-    "WB/Develop/CPP BEA/1.4 Linux工程管理/image/omp-ms-terminal.png",
-    "WB/Develop/CPP BEA/1.4 Linux工程管理/image/omp-font-search.png",
-    "WB/Develop/CPP BEA/1.4 Linux工程管理/image/omp-install-front.png",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.2 博客设计部署.md",
     "WB/Develop/CPP BEA/1.4 Linux工程管理/image",
     "WB/Develop/CPP BEA/1.4 Linux工程管理/New folder",
     "WB/Develop/CPP BEA/1.4 Linux工程管理",
     "WB/Develop/CPP BEA/New folder",
-    "README.md",
-    "WB/Develop/CPP BEA/9.3 构建和部署博客/file/file.md",
-    "WB/Develop/CPP BEA/9.3 构建和部署博客/9.3.1 用户需求分析.md",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.1 用户需求分析.md",
     "WB/Develop/WEB/WEB.md",
     "WB/Develop/WEB",
     "index.md",
     "WB",
-    "WB/Develop/CPP BEA/9.3 构建和部署博客/file/服务简图.excalidraw.svg",
-    "WB/Develop/CPP BEA/9.3 构建和部署博客/file/服务简图.excalidraw.md",
-    "WB/Develop/CPP BEA/9.3 构建和部署博客/file/国外域名.png",
-    "WB/Develop/CPP BEA/9.3 构建和部署博客/file/国内域名.png",
-    "WB/Develop/CPP BEA/9.3 构建和部署博客/file/nameserver配置.png",
-    "WB/Develop/CPP BEA/9.3 构建和部署博客/file/Obsidian发布方案.png",
-    "WB/Develop/CPP BEA/9.3 构建和部署博客/file/cf配置c.png",
-    "WB/Develop/CPP BEA/9.3 构建和部署博客/file",
-    "WB/Develop/CPP BEA/9.3 构建和部署博客",
     "Develop/CPP BEA/9.3 知识博客/9.3.1 需求分析.md",
     "Develop/CPP BEA/9.3 知识博客/9.3.2 设计部署.md",
     "tmp",
     "Develop/CPP BEA/Develop.md",
-    "WB/Develop/CPP BEA",
     "Develop.md"
   ]
 }

@@ -2,5 +2,9 @@
   "alwaysUpdateLinks": true,
   "newFileLocation": "current",
   "attachmentFolderPath": "./file",
-  "newLinkFormat": "absolute"
+  "newLinkFormat": "absolute",
+  "strictLineBreaks": true,
+  "readableLineLength": true,
+  "showLineNumber": true,
+  "showUnsupportedFiles": true
 }

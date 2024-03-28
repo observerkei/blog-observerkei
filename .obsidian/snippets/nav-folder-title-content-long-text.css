@@ -1,0 +1,8 @@
+/* Wrap long nav text*/
+.nav-file-title,
+.nav-folder-title,
+.nav-file-title-content:not(.mk-tree-text),
+.nav-folder-title-content {
+  white-space: normal;
+  width: auto;
+}
