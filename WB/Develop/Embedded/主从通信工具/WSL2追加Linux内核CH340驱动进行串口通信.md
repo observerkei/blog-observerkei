@@ -1,3 +1,14 @@
+# `CH340` 简介
+
+`CH340`是具有`USB总线`转`串口通信`功能的低成本通信芯片。
+
+## `CH340` 资料下载
+
+技术手册： [CH340DS1.PDF](https://www.wch.cn/downloads/CH340DS1_PDF.html)
+Linux驱动：[CH341SER\_LINUX.ZIP](https://www.wch.cn/download/CH341SER_LINUX_ZIP.html)
+PCB设计资料：[CH340PCB.ZIP](https://www.wch.cn/downloads/CH340PCB_ZIP.html)
+
+
 # `WSL2` 内核编译
 
 ## 内核源码下载
