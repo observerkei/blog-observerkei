@@ -52,9 +52,10 @@ sudo depmod -a
 
 ## 如果没有找到驱动
 
-下载`CH340`驱动文件： [CH341SER\_LINUX.ZIP - 南京沁恒微电子股份有限公司](https://www.wch.cn/download/CH341SER_LINUX_ZIP.html)
-以及`WSL2`内核： [GitHub - microsoft/WSL2-Linux-Kernel: The source for the Linux kernel used in Windows Subsystem for Linux 2 (WSL2)](https://github.com/microsoft/WSL2-Linux-Kernel)
-参考这个教程： [Linux驱动实践：带你一步一步编译内核驱动程序 - IOT物联网小镇 - 博客园](https://www.cnblogs.com/sewain/p/15565443.html)
+- 下载`CH340`驱动文件： [CH341SER\_LINUX.ZIP](https://www.wch.cn/download/CH341SER_LINUX_ZIP.html)
+- 以及`WSL2`内核： [GitHub - microsoft/WSL2-Linux-Kernel](https://github.com/microsoft/WSL2-Linux-Kernel)
+- 参考这个教程： [编译内核驱动程序 - IOT物联网小镇](https://www.cnblogs.com/sewain/p/15565443.html)
+
 自行进行内核编译，将含有 `CH340` 内核编译好后继续.
 
 ## 启用内核
