@@ -4,7 +4,7 @@
   "attachmentFolderPath": "./file",
   "newLinkFormat": "absolute",
   "strictLineBreaks": true,
-  "readableLineLength": true,
+  "readableLineLength": false,
   "showLineNumber": true,
   "showUnsupportedFiles": true
 }
