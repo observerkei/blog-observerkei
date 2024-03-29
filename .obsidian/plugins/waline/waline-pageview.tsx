@@ -1,10 +1,7 @@
-
-import { init } from '@waline/client';
-
 export default () => {
     return (
         <>
-            <div id="waline"></div>
+            <span class="waline-pageview-count" />
             <link
                 rel="stylesheet"
                 href="https://unpkg.com/@waline/client@v3/dist/waline.css"
