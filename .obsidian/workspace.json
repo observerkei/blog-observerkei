@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WB/Develop/WEB/WSL2进行局域网应用层通信的方法.md",
+                "file": "WB/WB.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -67,8 +67,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -88,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WB/Develop/WEB/WSL2进行局域网应用层通信的方法.md"
+                "file": "WB/WB.md"
               }
             }
           },
@@ -121,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WB/Develop/WEB/WSL2进行局域网应用层通信的方法.md",
+                "file": "WB/WB.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WB/Develop/WEB/WSL2进行局域网应用层通信的方法.md",
+                "file": "WB/WB.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +155,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "WB/Develop/WEB/WSL2进行局域网应用层通信的方法.md",
+                "file": "WB/WB.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -179,7 +178,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.2477151585679991,
+                  "scale": 0.6126649874133019,
                   "close": true
                 }
               }
@@ -206,13 +205,17 @@
   },
   "active": "0c32449330a981c3",
   "lastOpenFiles": [
+    "WB/Develop/WEB/WEB.md",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/Obsidian发布方案.png",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/cf配置f.png",
+    "WB/WB.md",
+    "WB/Develop/WEB/WSL2进行局域网应用层通信的方法.md",
+    "WB/Develop/Embedded/主从通信工具/WSL2追加Linux内核CH340驱动进行串口通信.md",
     "index.md",
     "README.md",
     "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4.5 oh-my-push 自定义Shell主题.md",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.2 低成本公网发布博客的方案.md",
     "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4 Linux工程管理.md",
-    "WB/Develop/WEB/WSL2进行局域网应用层通信的方法.md",
-    "WB/Develop/Embedded/主从通信工具/WSL2追加Linux内核CH340驱动进行串口通信.md",
     "WB/Develop/Embedded/主从通信工具/主从通信工具.md",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.1 博客用户需求分析.md",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3 构建和公网部署博客.md",
@@ -222,17 +225,14 @@
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/服务简图.excalidraw.svg",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/国外域名.png",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/国内域名.png",
-    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/Obsidian发布方案.png",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/nameserver配置.png",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/file.md",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/cf配置g.png",
-    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/cf配置f.png",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/cf配置e.png",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/cf配置c.png",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/cf配置d.png",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客",
-    "WB/WB.md",
     "WB/Develop/Develop.md",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3 构建和部署博客.md",
     "WB/Develop/CPP BEA/CPP BEA.md",
@@ -242,7 +242,6 @@
     "WB/Develop/CPP BEA/1.4 Linux工程管理",
     "WB/Develop/CPP BEA/New folder",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.1 用户需求分析.md",
-    "WB/Develop/WEB/WEB.md",
     "WB/Develop/WEB",
     "WB",
     "Develop/CPP BEA/9.3 知识博客/9.3.1 需求分析.md",
