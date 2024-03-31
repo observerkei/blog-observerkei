@@ -1,4 +1,5 @@
 import { init } from '@waline/client';
+import { local } from 'd3';
 
 // 资源清理
 function walineContentExit() {

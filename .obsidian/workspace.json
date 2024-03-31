@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WB/Develop/WEB/WEB.md",
+                "file": "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.3 博客评论系统.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WB/Develop/WEB/WEB.md"
+                "file": "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.3 博客评论系统.md"
               }
             }
           },
@@ -120,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WB/Develop/WEB/WEB.md",
+                "file": "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.3 博客评论系统.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WB/Develop/WEB/WEB.md",
+                "file": "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.3 博客评论系统.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +155,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "WB/Develop/WEB/WEB.md",
+                "file": "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.3 博客评论系统.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -205,12 +205,12 @@
   },
   "active": "0c32449330a981c3",
   "lastOpenFiles": [
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.2 低成本公网发布博客的方案.md",
+    "WB/Develop/WEB/WEB.md",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/4913",
     "WB/WB.md",
     "index.md",
-    "WB/Develop/WEB/WEB.md",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.3 博客评论系统.md",
-    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.2 低成本公网发布博客的方案.md",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/Obsidian发布方案.png",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/cf配置f.png",
     "WB/Develop/WEB/WSL2进行局域网应用层通信的方法.md",
@@ -248,7 +248,6 @@
     "WB",
     "Develop/CPP BEA/9.3 知识博客/9.3.1 需求分析.md",
     "Develop/CPP BEA/9.3 知识博客/9.3.2 设计部署.md",
-    "tmp",
     "Develop/CPP BEA/Develop.md",
     "Develop.md"
   ]
