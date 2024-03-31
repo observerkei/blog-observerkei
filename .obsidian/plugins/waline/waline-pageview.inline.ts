@@ -24,8 +24,7 @@ function walinePageviewInit() {
 
       // 如果找到了符合条件的元素
       if (element) {
-          // 清除该元素的所有 class
-          element.style.display = '';
+          element.style.visibility = 'visible';
           return true
       }
     }
