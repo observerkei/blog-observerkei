@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WB/Develop/Embedded/Voice Assistant/根分区扩容.md",
+                "file": "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4.5 oh-my-push 自定义Shell主题.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "右边",
+                "query": "oh-my",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WB/Develop/Embedded/Voice Assistant/根分区扩容.md"
+                "file": "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4.5 oh-my-push 自定义Shell主题.md"
               }
             }
           },
@@ -120,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WB/Develop/Embedded/Voice Assistant/根分区扩容.md",
+                "file": "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4.5 oh-my-push 自定义Shell主题.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WB/Develop/Embedded/Voice Assistant/根分区扩容.md",
+                "file": "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4.5 oh-my-push 自定义Shell主题.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +155,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "WB/Develop/Embedded/Voice Assistant/根分区扩容.md",
+                "file": "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4.5 oh-my-push 自定义Shell主题.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -205,6 +205,9 @@
   },
   "active": "0c32449330a981c3",
   "lastOpenFiles": [
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3 构建和公网部署博客.md",
+    "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4.5 oh-my-push 自定义Shell主题.md",
+    "WB/Develop/Embedded/Voice Assistant/根分区扩容.md",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.3 博客评论系统.md",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.2 低成本公网发布博客的方案.md",
     "WB/Develop/WEB/WEB.md",
@@ -216,11 +219,9 @@
     "WB/Develop/WEB/WSL2进行局域网应用层通信的方法.md",
     "WB/Develop/Embedded/主从通信工具/WSL2追加Linux内核CH340驱动进行串口通信.md",
     "README.md",
-    "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4.5 oh-my-push 自定义Shell主题.md",
     "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4 Linux工程管理.md",
     "WB/Develop/Embedded/主从通信工具/主从通信工具.md",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.1 博客用户需求分析.md",
-    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3 构建和公网部署博客.md",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/服务简图.excalidraw.md",
     "file/服务简图.excalidreaw.md",
     "file",
