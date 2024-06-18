@@ -1,0 +1,81 @@
+{
+  "recentFiles": [
+    {
+      "basename": "index",
+      "path": "index.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "9.3.3 博客评论系统",
+      "path": "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.3 博客评论系统.md"
+    },
+    {
+      "basename": "CPP BEA",
+      "path": "WB/Develop/CPP BEA/CPP BEA.md"
+    },
+    {
+      "basename": "Voice Assistant",
+      "path": "WB/Develop/Embedded/Voice Assistant/Voice Assistant.md"
+    },
+    {
+      "basename": "根分区扩容",
+      "path": "WB/Develop/Embedded/Voice Assistant/根分区扩容.md"
+    },
+    {
+      "basename": "部署和构建",
+      "path": "WB/Develop/Embedded/Voice Assistant/部署和构建.md"
+    },
+    {
+      "basename": "WSL2追加Linux内核CH340驱动进行串口通信",
+      "path": "WB/Develop/Embedded/主从通信工具/WSL2追加Linux内核CH340驱动进行串口通信.md"
+    },
+    {
+      "basename": "主从通信工具",
+      "path": "WB/Develop/Embedded/主从通信工具/主从通信工具.md"
+    },
+    {
+      "basename": "Embedded",
+      "path": "WB/Develop/Embedded/Embedded.md"
+    },
+    {
+      "basename": "WEB",
+      "path": "WB/Develop/WEB/WEB.md"
+    },
+    {
+      "basename": "WSL2进行局域网应用层通信的方法",
+      "path": "WB/Develop/WEB/WSL2进行局域网应用层通信的方法.md"
+    },
+    {
+      "basename": "Develop",
+      "path": "WB/Develop/Develop.md"
+    },
+    {
+      "basename": "1.4.5 oh-my-push 自定义Shell主题",
+      "path": "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4.5 oh-my-push 自定义Shell主题.md"
+    },
+    {
+      "basename": "1.4 Linux工程管理",
+      "path": "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4 Linux工程管理.md"
+    },
+    {
+      "basename": "9.3.2 低成本公网发布博客的方案",
+      "path": "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.2 低成本公网发布博客的方案.md"
+    },
+    {
+      "basename": "9.3.1 博客用户需求分析",
+      "path": "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.1 博客用户需求分析.md"
+    },
+    {
+      "basename": "9.3 构建和公网部署博客",
+      "path": "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3 构建和公网部署博客.md"
+    },
+    {
+      "basename": "WB",
+      "path": "WB/WB.md"
+    }
+  ],
+  "omittedPaths": []
+}

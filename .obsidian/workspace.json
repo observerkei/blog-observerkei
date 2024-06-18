@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "cda4b7ceaedda8a6",
+        "id": "baa0023a1be09c7e",
         "type": "tabs",
         "children": [
           {
-            "id": "0c32449330a981c3",
+            "id": "d8ea1cf189cb9eb3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4.5 oh-my-push 自定义Shell主题.md",
+                "file": "index.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -66,6 +66,14 @@
               "type": "bookmarks",
               "state": {}
             }
+          },
+          {
+            "id": "8f5d840eca87af22",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
           }
         ]
       }
@@ -87,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4.5 oh-my-push 自定义Shell主题.md"
+                "file": "index.md"
               }
             }
           },
@@ -120,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4.5 oh-my-push 自定义Shell主题.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4.5 oh-my-push 自定义Shell主题.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +163,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4.5 oh-my-push 自定义Shell主题.md",
+                "file": "index.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -178,7 +186,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.6126649874133019,
+                  "scale": 0.24274372968657706,
                   "close": true
                 }
               }
@@ -192,36 +200,43 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "graph:查看关系图谱": false,
-      "command-palette:打开命令面板": false,
-      "workspaces:管理工作区布局": false,
-      "switcher:打开快速切换": false,
-      "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "markdown-importer:打开 Markdown 格式转换器": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "workspaces:Manage workspace layouts": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "0c32449330a981c3",
+  "active": "d8ea1cf189cb9eb3",
   "lastOpenFiles": [
-    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3 构建和公网部署博客.md",
-    "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4.5 oh-my-push 自定义Shell主题.md",
-    "WB/Develop/Embedded/Voice Assistant/根分区扩容.md",
+    "README.md",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.3 博客评论系统.md",
-    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.2 低成本公网发布博客的方案.md",
+    "WB/Develop/CPP BEA/CPP BEA.md",
+    "WB/Develop/Embedded/Voice Assistant/Voice Assistant.md",
+    "WB/Develop/Embedded/Voice Assistant/根分区扩容.md",
+    "WB/Develop/Embedded/Voice Assistant/部署和构建.md",
+    "WB/Develop/Embedded/主从通信工具/WSL2追加Linux内核CH340驱动进行串口通信.md",
+    "WB/Develop/Embedded/主从通信工具/主从通信工具.md",
+    "WB/Develop/Embedded/Embedded.md",
     "WB/Develop/WEB/WEB.md",
-    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/4913",
-    "WB/WB.md",
+    "WB/Develop/WEB/WSL2进行局域网应用层通信的方法.md",
+    "WB/Develop/Develop.md",
     "index.md",
+    "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4.5 oh-my-push 自定义Shell主题.md",
+    "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4 Linux工程管理.md",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.2 低成本公网发布博客的方案.md",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.1 博客用户需求分析.md",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3 构建和公网部署博客.md",
+    "WB/WB.md",
+    "2024-04-11.md",
+    "WB/Develop/magic.mgc",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/4913",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/Obsidian发布方案.png",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/cf配置f.png",
-    "WB/Develop/WEB/WSL2进行局域网应用层通信的方法.md",
-    "WB/Develop/Embedded/主从通信工具/WSL2追加Linux内核CH340驱动进行串口通信.md",
-    "README.md",
-    "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4 Linux工程管理.md",
-    "WB/Develop/Embedded/主从通信工具/主从通信工具.md",
-    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.1 博客用户需求分析.md",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/服务简图.excalidraw.md",
     "file/服务简图.excalidreaw.md",
     "file",
@@ -236,20 +251,13 @@
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/cf配置d.png",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客",
-    "WB/Develop/Develop.md",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3 构建和部署博客.md",
-    "WB/Develop/CPP BEA/CPP BEA.md",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.2 博客设计部署.md",
     "WB/Develop/CPP BEA/1.4 Linux工程管理/image",
     "WB/Develop/CPP BEA/1.4 Linux工程管理/New folder",
     "WB/Develop/CPP BEA/1.4 Linux工程管理",
     "WB/Develop/CPP BEA/New folder",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.1 用户需求分析.md",
-    "WB/Develop/WEB",
-    "WB",
-    "Develop/CPP BEA/9.3 知识博客/9.3.1 需求分析.md",
-    "Develop/CPP BEA/9.3 知识博客/9.3.2 设计部署.md",
-    "Develop/CPP BEA/Develop.md",
-    "Develop.md"
+    "WB/Develop/WEB"
   ]
 }
