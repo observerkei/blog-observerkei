@@ -1,3 +1,9 @@
+---
+title: 
+date: 2024-03-28
+draft: false
+permalink: /7
+---
 # 配置方法
 
 ## 1. 配置防火墙入站规则。
