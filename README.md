@@ -1,7 +1,7 @@
 ---
 draft: true
 ---
-# [Knowledge Blog](https://blog.observerkei.top)
+# [Blog | observerkei](https://blog.observerkei.top)
 
 本项目是一个博客的存档部分。主要通过 [Obsidian](https://obsidian.md/)   工具进行编写，并通过其他工具进行发布。
 
