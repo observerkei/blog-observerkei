@@ -1,5 +1,5 @@
 ---
-title: 🎉 Welcome
+title: 🎉 Welcome to Blog of observerkei
 date: 2024-01-31
 draft: false
 permalink: /1
