@@ -1,6 +1,8 @@
 ---
 title: 
 date: 2024-03-28
+tags:
+  - Note
 draft: false
 permalink: /15
 ---

@@ -3,7 +3,7 @@ title: 🎉 Welcome
 date: 2024-01-31
 draft: false
 permalink: /1
-new permalink: /28
+new permalink: /27
 ---
 
 
