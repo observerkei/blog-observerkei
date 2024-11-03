@@ -101,6 +101,8 @@ npm install -g next-export-fixer
 `ebuild` 是构建项目静态文件
 
 ```json
+// package.json
+
    ...
 +  "main": "main.js",
 +  "author": "observerkei",
@@ -230,6 +232,8 @@ npm exec --package=@electron-forge/cli -c "electron-forge import"
 配置 `package.json`  ，添加 `efmake/efpackage`  
 
 ```json
+// package.json
+
   ...
   "scripts": {
 +    "efmake": "electron-forge make",
@@ -428,9 +432,11 @@ module.exports = {
 
 ```
 
-这个是打包命令配置：  
+这个是 `package.json` 打包命令配置：  
 
 ```json
+// package.json
+
   ...
   "scripts": {
     "edev": "concurrently -n \"NEXT,ELECTRON\" -c \"yellow,blue\" --kill-others \"next dev\" \"electron .\"",
