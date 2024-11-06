@@ -122,7 +122,7 @@ npx cap sync
 ![[WB/Develop/WEB/file/apk-build-key.png]]  
 
 
-配置好签名后点击下一步，配置apk输出路径，然后选择 `debug/release` 版本，在点击构建即可。  
+配置好签名后点击下一步，配置apk输出路径，然后选择 `debug/release` 版本，再点击构建即可。  
 
 构建完成后，即可得到 APK 文件，复制到手机里面就能安装使用。  
 
