@@ -520,7 +520,7 @@ win.once('ready-to-show', (event) => {
 })
 ```
 
-## 打包后，占用资源过大
+## 打出来的包太大
 
 这个只能部分缓解，因为Electron本身打包的时候会把 chromium 也打包进去，所以会比较大。  
 Electron打包的时候，会把源码也一起打包进去，也会包括项目的 `node_modules` 文件夹，因此会非常大。  
