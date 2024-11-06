@@ -154,6 +154,24 @@ npx capacitor-assets generate
 重新构建应用即可生效。  
 
 
+## 配置 APK 版本号
+
+安装依赖：  
+```bash
+npm i -D capacitor-set-version
+```
+
+修改版本号为`0.1`，构建版本为`1`
+
+```bash
+# Set version to 1.2.3 and build number to 10 on current folder.
+npx capacitor-set-version set:android -v 0.1 -b 1
+
+# set:android 安卓端
+# set:ios IOS端 
+```
+
+
 # 碰到的问题
 
 ## `Android Studio` 打开项目报 Read timed out 错误
