@@ -338,7 +338,7 @@ sudo dpkg -i 安装包.deb
 
 ## Windows 打包
 
-Windows 的 Election 打包需要用到 Windows 设备来进行打包，虽然官方提供了Linux+wine的打包方式但是我尝试的时候，发现打出来的包放到Windows下不能运行，以及安装Wine也是一大坑，出于稳定性和方便考虑，直接用Windows来进行打包  
+Windows 的 Election 打包需要用到 Windows 设备来进行打包，虽然官方提供了Linux+Wine的打包方式，但是我尝试的时候，发现打出来的包放到Windows下不能运行，以及安装Wine也是一大坑，出于稳定性和方便考虑，直接用Windows来进行打包  
 
 
 ### Windows 环境配置
@@ -553,7 +553,7 @@ module.exports = {
   },
 ```
 
-## Linux 打 Windows 包异常
+## Linux 打 Windows 包异常(Wine 安装方法)
 
 最后为了打Electron包使用的方法是在Windows下进行打包： [[#Windows 打包]]  
 
