@@ -12,6 +12,8 @@ Capacitor 可以理解为 Electron 的移动端版本（ [[WB/Develop/WEB/基于
 Capacitor 打包安卓应用的时候，会使用安卓内置的 WebView, 不需要额外内置 WEB/Node.js 运行环境，因此打出来的包相比 Electron 小很多。  
 可以将 Capacitor 简单理解为一个移动端开发工具包（如 `Android Studio` 工具包），它提供了将 WEB独立项目(`HTML/CSS/JS`) 转化为移动端项目工程的脚本，以及提供了一些原生的API。 
 
+本文用客户端路由的 `Next.js` (通过静态导出方式生成html)来进行示范，其他框架如果能直接生成静态文件（只需要客户端就能运行的文件），也可以进行参考。  
+
 
 # 参考资料
 

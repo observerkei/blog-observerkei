@@ -14,7 +14,8 @@ React 是一个能用来写网页界面的JavaScript库，可以简单理解为�
 
 Next.js 是一个用 React 来实现的框架，可以简单理解为 React 的拓展工具库。  
 
-本文使用了Next.js静态导出的方法进行运行项目，因此Next.js只能使用客户端路由，如果要用到服务器路由，可以参考一下这个方法：[Building Desktop Apps with Electron + Next.JS (without Nextron) | by RBFraphael | Medium](https://rbfraphael.medium.com/building-desktop-apps-with-electron-next-js-without-nextron-01bbf1fdd72e)     
+本文使用了Next.js静态导出的方法进行运行项目，因此Next.js只能使用客户端路由，如果要用到服务器路由的功能，可以参考一下这个方法：[spa5k/nextjs_approuter_electron: This is a template for building Electron apps with Next.js App router, SSR and Server Components](https://github.com/spa5k/nextjs_approuter_electron)  
+
 
 文章内容计划使用以下步骤来编写    
 - 构建  React(Next.js) 应用
@@ -35,6 +36,7 @@ Electron 支持 URL 加载和文件加载两种方式，URL加载就是你构建
 - [使用 Electron 和 React 构建桌面应用-腾讯云开发者社区-腾讯云](https://cloud.tencent.com/developer/article/2071153)
 - [用Next.js和Electron构建一个应用程序的方法自从引入Node.js以来，基本的网络技术（HTML、CSS和J - 掘金](https://juejin.cn/post/7111724609635876894)
 - [Electron Forge | 跨平台实战详解(中)-CSDN博客](https://blog.csdn.net/qq_39517117/article/details/138757291)
+- [spa5k/nextjs_approuter_electron: This is a template for building Electron apps with Next.js App router, SSR and Server Components](https://github.com/spa5k/nextjs_approuter_electron)
 
 # 构建React(Next.js)应用
 
