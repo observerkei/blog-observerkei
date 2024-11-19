@@ -8,16 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d8ea1cf189cb9eb3",
+            "id": "0a7bb5440e3a64a5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "index.md",
-                "mode": "source",
+                "mode": "preview",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ],
@@ -41,7 +43,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -50,13 +54,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "oh-my",
+                "query": "桌面端",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -64,7 +70,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           },
           {
@@ -72,10 +80,13 @@
             "type": "leaf",
             "state": {
               "type": "recent-files",
-              "state": {}
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -96,7 +107,9 @@
               "type": "outline",
               "state": {
                 "file": "index.md"
-              }
+              },
+              "icon": "lucide-list",
+              "title": "Outline of index"
             }
           },
           {
@@ -108,7 +121,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           },
           {
@@ -119,7 +134,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -128,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "WB/Develop/WEB/基于Electron的React(Next.js)多平台桌面应用构建.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +153,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 基于Electron的React(Next.js)多平台桌面应用构建"
             }
           },
           {
@@ -145,10 +164,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "WB/Develop/WEB/基于Electron的React(Next.js)多平台桌面应用构建.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 基于Electron的React(Next.js)多平台桌面应用构建"
             }
           }
         ]
@@ -171,7 +192,7 @@
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": true,
-                  "showTags": true,
+                  "showTags": false,
                   "showAttachments": true,
                   "hideUnresolved": false,
                   "collapse-color-groups": true,
@@ -186,17 +207,19 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.24274372968657706,
+                  "scale": 0.37790355574097706,
                   "close": true
                 }
-              }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of index"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 213.5
+    "width": 257.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -211,53 +234,53 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d8ea1cf189cb9eb3",
+  "active": "8f5d840eca87af22",
   "lastOpenFiles": [
-    "README.md",
+    "WB/Develop/WEB/基于Capacitor的React(Next.js)多平台移动应用构建.md",
+    "WB/Develop/CPP BEA/14 算法与数据结构/1 栈和队列/1.3 队列的最大值.md",
+    "WB/Develop/WEB/基于Electron的React(Next.js)多平台桌面应用构建.md",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.3 博客评论系统.md",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3 构建和公网部署博客.md",
+    "WB/Develop/WEB/WSL2进行局域网应用层通信的方法.md",
+    "WB/Develop/CPP BEA/2.1 网络编程/2.1.5 什么是内存对齐.md",
+    "WB/Develop/CPP BEA/2.1 网络编程/2.1 网络编程.md",
+    "index.md",
     "WB/Develop/CPP BEA/CPP BEA.md",
-    "WB/Develop/Embedded/Voice Assistant/Voice Assistant.md",
+    "WB/Develop/CPP BEA/2.1 网络编程",
+    "WB/Develop/WEB/file/apk-bundel.png",
+    "WB/Develop/WEB/file/apk-build-key.png",
+    "2024-03-28.md",
+    "WB/Develop/WEB/file/next-electron-lost-file.png",
+    "WB/Develop/WEB/file",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.2 低成本公网发布博客的方案.md",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/dw.txt",
+    "README.md",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/服务简图.excalidraw.md",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.1 博客用户需求分析.md",
+    "WB/Develop/CPP BEA/14 算法与数据结构/1 栈和队列/1.4 用一个栈实现另一个栈的排序.md",
+    "WB/Develop/CPP BEA/14 算法与数据结构/1 栈和队列/1.2 包含 min 函数的栈.md",
+    "WB/Develop/CPP BEA/14 算法与数据结构/1 栈和队列/1.1 用两个栈实现队列.md",
+    "WB/Develop/CPP BEA/14 算法与数据结构/1 栈和队列/1 栈和队列.md",
+    "WB/Develop/CPP BEA/14 算法与数据结构/14 算法与数据结构.md",
     "WB/Develop/Embedded/Voice Assistant/根分区扩容.md",
     "WB/Develop/Embedded/Voice Assistant/部署和构建.md",
-    "WB/Develop/Embedded/主从通信工具/WSL2追加Linux内核CH340驱动进行串口通信.md",
-    "WB/Develop/Embedded/主从通信工具/主从通信工具.md",
-    "WB/Develop/Embedded/Embedded.md",
-    "WB/Develop/WEB/WEB.md",
-    "WB/Develop/WEB/WSL2进行局域网应用层通信的方法.md",
-    "WB/Develop/Develop.md",
-    "index.md",
+    "WB/Develop/Embedded/Voice Assistant/Voice Assistant.md",
+    "tags/Update.md",
     "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4.5 oh-my-push 自定义Shell主题.md",
-    "WB/Develop/CPP BEA/1.4 Linux工程管理/1.4 Linux工程管理.md",
-    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.2 低成本公网发布博客的方案.md",
-    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.1 博客用户需求分析.md",
-    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3 构建和公网部署博客.md",
-    "WB/WB.md",
-    "2024-04-11.md",
+    "WB/Develop/CPP BEA/15 程序员的自我修养/1 C&CPP基础/1 语法基础/1.1 const关键字作用.md",
+    "tags",
+    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/服务简图.excalidraw.svg",
     "WB/Develop/magic.mgc",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/4913",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/Obsidian发布方案.png",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/cf配置f.png",
-    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/服务简图.excalidraw.md",
-    "file/服务简图.excalidreaw.md",
     "file",
-    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/服务简图.excalidraw.svg",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/国外域名.png",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/国内域名.png",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/nameserver配置.png",
-    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/file.md",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/cf配置g.png",
-    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/cf配置e.png",
-    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/cf配置c.png",
-    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file/cf配置d.png",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客/file",
     "WB/Develop/CPP BEA/9.3 构建和公网部署博客",
-    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3 构建和部署博客.md",
-    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.2 博客设计部署.md",
-    "WB/Develop/CPP BEA/1.4 Linux工程管理/image",
-    "WB/Develop/CPP BEA/1.4 Linux工程管理/New folder",
-    "WB/Develop/CPP BEA/1.4 Linux工程管理",
-    "WB/Develop/CPP BEA/New folder",
-    "WB/Develop/CPP BEA/9.3 构建和公网部署博客/9.3.1 用户需求分析.md",
-    "WB/Develop/WEB"
+    "WB/Develop/CPP BEA/1.4 Linux工程管理/image"
   ]
 }
