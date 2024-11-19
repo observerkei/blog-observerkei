@@ -14,8 +14,6 @@ React 是一个能用来写网页界面的JavaScript库，可以简单理解为�
 
 Next.js 是一个用 React 来实现的框架，可以简单理解为 React 的拓展工具库。  
 
-本文使用了Next.js静态导出的方法进行运行项目，因此Next.js只能使用客户端路由，如果要用到服务器路由的功能，可以参考一下这个方法：[spa5k/nextjs_approuter_electron: This is a template for building Electron apps with Next.js App router, SSR and Server Components](https://github.com/spa5k/nextjs_approuter_electron)  
-
 
 文章内容计划使用以下步骤来编写    
 - 构建  React(Next.js) 应用
@@ -23,7 +21,7 @@ Next.js 是一个用 React 来实现的框架，可以简单理解为 React 的�
 
 Electron 支持 URL 加载和文件加载两种方式，URL加载就是你构建好Electron应用后，给他传入一个URL，他只显示你这个URL内容。  
 文件加载就是传入HTML文件，Electron通过文件渲染内容。  
-本文构建的时候，使用了 Electron 文件加载方式，因此理论上来说，只要能进行静态导出，就能兼容各种前端框架。  
+本文构建的时候，提供了 Electron 文件加载方式，因此理论上来说，只要能进行静态导出，就能兼容各种前端框架。  
 
 通过使用Electron，可以实现 Linux/Windows/MacOS 三平台桌面端应用构建。  
 
@@ -37,6 +35,7 @@ Electron 支持 URL 加载和文件加载两种方式，URL加载就是你构建
 - [用Next.js和Electron构建一个应用程序的方法自从引入Node.js以来，基本的网络技术（HTML、CSS和J - 掘金](https://juejin.cn/post/7111724609635876894)
 - [Electron Forge | 跨平台实战详解(中)-CSDN博客](https://blog.csdn.net/qq_39517117/article/details/138757291)
 - [spa5k/nextjs_approuter_electron: This is a template for building Electron apps with Next.js App router, SSR and Server Components](https://github.com/spa5k/nextjs_approuter_electron)
+- [next.config.js Options: output | Next.js](https://nextjs.org/docs/app/api-reference/next-config-js/output#automatically-copying-traced-files)
 
 # 构建React(Next.js)应用
 
@@ -73,9 +72,7 @@ npx create-nect-app next-electron-test
 npx start
 ```
 
-# 适配 Electron
-
-## 安装 Electron
+# 安装 Electron
 
 ```bash
 # 进入工作路径
@@ -88,19 +85,28 @@ npm install --save-dev electron
 cnpm install -g electron
 ```
 
-## 使用 Electron 加载自己的项目
+安装好 Electron 后，从 [[#动态路由项目适配 Electron]] 和 [[#静态路由项目适配 Electron]] 中选择一种适合自己的构建方法进行构建。如果是支持导出不需要服务器运行代码的`index.html`的框架，可以使用第二种方法。   
+
+如果不清楚自己的 Next.js 是哪种路由方法，就直接使用 [[#动态路由项目适配 Electron]] 的方法。  
+
+
+# 动态路由项目适配 Electron
+
+一般情况下，无特殊设置，默认 Next.js 是会产生非静态路由项目，如果是静态路由项目，建议使用[[#静态路由项目适配 Electron]]方法，这样占用的空间比较小。  
+
+## 使用 Electron 加载项目
 
 安装辅助工具
 ```bash
 npm install -g concurrently  
-npm install -g next-export-fixer 
 ```
 ### 修改 `package.json`
 
 其中 main.js 是指定 package.json 目录下的 Electron 入口文件， 你的 Electron 应用会以这个文件作为开始启动，在里面需要编写加载自己网页的逻辑。    
 `author/description/license` 这些打包要用到。  
-`edev` 是开发模式运行项目
+`edev` 是开发模式运行项目  
 `ebuild` 是构建项目静态文件
+`build` 添加了 `standalone` 支持 
 
 ```json
 // package.json
@@ -111,16 +117,18 @@ npm install -g next-export-fixer
 +  "description": "Test App",
 +  "license": "MIT",
    "scripts": {
++    "build": "next build && cp -r public .next/standalone/ && cp -r .next/static .next/standalone/.next/",
 +    "edev": "concurrently -n \"NEXT,ELECTRON\" -c \"yellow,blue\" --kill-others \"next dev\" \"electron .\"",
-+    "ebuild": "next build && next-export-fixer",
++    "ebuild": "npm run build",
      ...
    },
    ...
 ```
 
+
 ### 修改 `next.config.js`
 
-`next.config.js`添加静态导出支持：  
+`next.config.js`添加独立导出支持：  
 
 ```json
 // next.config.js
@@ -128,62 +136,101 @@ npm install -g next-export-fixer
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   ...
-  output: 'export',
+  output: 'standalone',
 };
 
 module.exports = nextConfig;
 ```
 
-### 添加Electron入口 `main.js`
+
+### 添加 Electron 入口 `main.js`
+
+先添加依赖：  
+
+```bash
+cnpm install get-port-please
+cnpm install @electron-toolkit/utils
+```
+
+修改 `main.js` 文件：  
 
 ```javascript
 // main.js
 
-const { app, BrowserWindow } = require('electron/main')
-const path = require('node:path')
+const { is } = require('@electron-toolkit/utils');
+const { app, BrowserWindow, ipcMain } =  require('electron');
+const { getPort } = require('get-port-please');
+const { startServer } = require('next/dist/server/lib/start-server');
+const { join } = require('path');
 
-
-function createWindow () {
-  const win = new BrowserWindow({
+const createWindow = () => {
+  const mainWindow = new BrowserWindow({
     width: 1280,
     height: 720,
-    show: false,
     webPreferences: {
-      preload: path.join(__dirname, 'main/preload.js')
+      preload: join(__dirname, "preload.js"),
+      nodeIntegration: true,
+    },
+  });
+
+  mainWindow.on("ready-to-show", () => mainWindow.show());
+
+  const loadURL = async () => {
+    if (is.dev) {
+      mainWindow.loadURL("http://localhost:3000");
+    } else {
+      try {
+        const port = await startNextJSServer();
+        console.log("Next.js server started on port:", port);
+        mainWindow.loadURL(`http://localhost:${port}`);
+      } catch (error) {
+        console.error("Error starting Next.js server:", error);
+      }
     }
-  })
+  };
 
-  // 适配开发模式和运行模式的不同路径
-  if (!app.isPackaged) {
-    win.loadFile('out/index.html') 
-  } else {
-    win.loadFile(path.join(process.resourcesPath, "index.html"));
+  loadURL();
+  return mainWindow;
+};
+
+const startNextJSServer = async () => {
+  try {
+    const nextJSPort = await getPort({ portRange: [30_011, 50_000] });
+    const webDir = join(app.getAppPath(), ".next/standalone/");
+
+    await startServer({
+      dir: webDir,
+      isDev: false,
+      hostname: "localhost",
+      port: nextJSPort,
+      customServer: true,
+      allowRetry: false,
+      keepAliveTimeout: 5000,
+      minimalMode: true,
+    });
+
+    return nextJSPort;
+  } catch (error) {
+    console.error("Error starting Next.js server:", error);
+    throw error;
   }
-
-  win.once('ready-to-show', (event) => {
-      win.show()
-  })
-}
+};
 
 app.whenReady().then(() => {
-  createWindow()
+  createWindow();
 
-  app.on('activate', () => {
-    if (BrowserWindow.getAllWindows().length === 0) {
-      createWindow()
-    }
-  })
-})
+  ipcMain.on("ping", () => console.log("pong"));
+  app.on("activate", () => {
+    if (BrowserWindow.getAllWindows().length === 0) createWindow();
+  });
+});
 
-app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') {
-    app.quit()
-  }
-})
+app.on("window-all-closed", () => {
+  if (process.platform !== "darwin") app.quit();
+});
 ```
 
-
-### 添加Electron 预加载文件  `preload.js`  
+### 添加 Electron 预加载文件  `preload.js`  
 
 ```javascript
 // preload.js
@@ -210,9 +257,10 @@ npm run ebuild
 npm run edev
 ```
 
-# Electron 打包
 
-## Linux 打包
+## Electron 打 Linux 包
+
+^dfb59d
 
 官方推荐使用 `electron-forge` 进行打包。  
 
@@ -222,13 +270,13 @@ npm run edev
 
 ```bash
 # 先进入工程根目录，然后再执行命令
-npm install --save-dev @electron-forge/cli
+cnpm install --save-dev @electron-forge/cli
 ```
 
-构建打包配置，默认同意选项即可，如果询问是否向 package.json 添加命令的时候，选否
+构建打包配置，默认同意选项即可，如果询问是否向 `package.json` 添加命令的时候，选否
+
 ```bash
 npm exec --package=@electron-forge/cli -c "electron-forge import"
-
 ```
 
 配置 `package.json`  ，添加 `efmake/efpackage`  
@@ -245,12 +293,12 @@ npm exec --package=@electron-forge/cli -c "electron-forge import"
   ...
 ```
 
-编辑 `forge.config.json` 配置文件，其中 makers 里面定义了构建哪些平台的包，这里只构建了1个平台的包。   
-`packagerConfig.ignore` 里面过滤了不打包项目的所有文件夹，因为项目是通过文件加载，不依赖源码     
-`packagerConfig.extraResource` 配置了导出资源文件  
+编辑 `forge.config.js` 配置文件，其中 makers 里面定义了构建哪些平台的包，这里只构建了1个平台的包。   
+`packagerConfig.ignore` 可以通过配置不打包项目的文件夹  
+`packagerConfig.extraResource` 可以配置需要直接导出的资源文件  
 
 ```json
-// forge.config.json
+// forge.config.js
 
 const { FusesPlugin } = require('@electron-forge/plugin-fuses');
 const { FuseV1Options, FuseVersion } = require('@electron/fuses');
@@ -259,15 +307,8 @@ module.exports = {
   packagerConfig: {
     asar: true,
     ignore: [
-        "^/.*/.*$"
     ],
     extraResource: [
-      "./out/_next/",
-      "./out/index.html",
-      "./out/404.html",
-      "./out/favicon.ico",
-      "./out/locales/",
-      "./out/tiktoken_bg.wasm",
     ],
   },
   rebuildConfig: {},
@@ -338,7 +379,255 @@ sudo dpkg -i 安装包.deb
 ```
 
 
-## Windows 打包
+## Electron 打 Windows 包
+
+使用 [[#^dfb59d||动态路由项目 Electron 打 Linux 包的配置]] 参考 [[#^f52b23|静态路由项目 Electron 打 Windows 包]] 方法，进行打包。  
+
+
+# 静态路由项目适配 Electron
+
+静态路由项目的要求如下：[Deploying: Static Exports | Next.js](https://nextjs.org/docs/pages/building-your-application/deploying/static-exports)  
+
+## 使用 Electron 加载项目
+
+安装辅助工具
+```bash
+npm install -g concurrently  
+npm install -g next-export-fixer 
+```
+### 修改 `package.json`
+
+其中 main.js 是指定 package.json 目录下的 Electron 入口文件， 你的 Electron 应用会以这个文件作为开始启动，在里面需要编写加载自己网页的逻辑。    
+`author/description/license` 这些打包要用到。  
+`edev` 是开发模式运行项目  
+`ebuild` 是构建项目静态文件
+
+```json
+// package.json
+
+   ...
++  "main": "main.js",
++  "author": "observerkei",
++  "description": "Test App",
++  "license": "MIT",
+   "scripts": {
++    "build": "next build && next-export-fixer",
++    "edev": "concurrently -n \"NEXT,ELECTRON\" -c \"yellow,blue\" --kill-others \"next dev\" \"electron .\"",
++    "ebuild": "npm run build",
+     ...
+   },
+   ...
+```
+
+### 修改 `next.config.js`
+
+`next.config.js`添加静态导出支持：  
+
+```json
+// next.config.js
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  ...
+  output: 'export',
+};
+
+module.exports = nextConfig;
+```
+
+
+### 添加 Electron 入口 `main.js`
+
+```javascript
+// main.js
+
+const { app, BrowserWindow } = require('electron/main')
+const path = require('node:path')
+
+
+function createWindow () {
+  const win = new BrowserWindow({
+    width: 1280,
+    height: 720,
+    show: false,
+    webPreferences: {
+      preload: path.join(__dirname, 'main/preload.js')
+    }
+  })
+
+  // 适配开发模式和运行模式的不同路径
+  if (!app.isPackaged) {
+    win.loadFile('out/index.html') 
+  } else {
+    win.loadFile(path.join(process.resourcesPath, "index.html"));
+  }
+
+  win.once('ready-to-show', (event) => {
+      win.show()
+  })
+}
+
+app.whenReady().then(() => {
+  createWindow()
+
+  app.on('activate', () => {
+    if (BrowserWindow.getAllWindows().length === 0) {
+      createWindow()
+    }
+  })
+})
+
+app.on('window-all-closed', () => {
+  if (process.platform !== 'darwin') {
+    app.quit()
+  }
+})
+```
+
+
+### 添加 Electron 预加载文件  `preload.js`  
+
+```javascript
+// preload.js
+
+// 所有的 Node.js API接口 都可以在 preload 进程中被调用.
+// 它拥有与Chrome扩展一样的沙盒。
+window.addEventListener('DOMContentLoaded', () => {
+  const replaceText = (selector, text) => {
+    const element = document.getElementById(selector)
+    if (element) element.innerText = text
+  }
+
+  for (const dependency of ['chrome', 'node', 'electron']) {
+    replaceText(`${dependency}-version`, process.versions[dependency])
+  }
+})
+```
+
+### 尝试运行 Electron 项目
+
+```bash
+# 因为是使用文件加载，所以需要先构建文件
+npm run ebuild 
+npm run edev
+```
+
+
+## Electron 打 Linux 包
+
+官方推荐使用 `electron-forge` 进行打包。  
+
+### 配置 `electron-forge`
+
+先安装 `electron-forge`  
+
+```bash
+# 先进入工程根目录，然后再执行命令
+npm install --save-dev @electron-forge/cli
+```
+
+构建打包配置，默认同意选项即可，如果询问是否向 `package.json` 添加命令的时候，选否
+```bash
+npm exec --package=@electron-forge/cli -c "electron-forge import"
+```
+
+配置 `package.json`  ，添加 `efmake/efpackage`  
+
+```json
+// package.json
+
+  ...
+  "scripts": {
++    "efmake": "electron-forge make",
++    "efpackage": "electron-forge package", 
+     ...
+  }
+  ...
+```
+
+编辑 `forge.config.js` 配置文件，其中 makers 里面定义了构建哪些平台的包，这里只构建了1个平台的包。   
+`packagerConfig.ignore` 可以通过配置`"^/.*/.*$"`过滤不打包项目的所有文件夹，当项目是通过文件加载的时候，可以不依赖源码  
+`packagerConfig.extraResource` 可以配置需要直接导出的资源文件  
+
+```json
+// forge.config.js
+
+const { FusesPlugin } = require('@electron-forge/plugin-fuses');
+const { FuseV1Options, FuseVersion } = require('@electron/fuses');
+
+module.exports = {
+  packagerConfig: {
+    asar: true,
+    ignore: [
+        "^/.*/.*$"
+    ],
+    extraResource: [
+      "./out/_next/",
+      "./out/index.html",
+      "./out/404.html",
+      "./out/favicon.ico",
+      "./out/locales/",
+      "./out/tiktoken_bg.wasm",
+    ],
+  },
+  rebuildConfig: {},
+  makers: [
+    {
+      name: '@electron-forge/maker-squirrel',
+      config: {},
+    },
+    {
+      name: '@electron-forge/maker-zip',
+      platforms: ['darwin'],
+    },
+    {
+      name: '@electron-forge/maker-deb',
+      config: {},
+    }
+  ],
+  plugins: [
+    {
+      name: '@electron-forge/plugin-auto-unpack-natives',
+      config: {},
+    },
+    // Fuses are used to enable/disable various Electron functionality
+    // at package time, before code signing the application
+    new FusesPlugin({
+      version: FuseVersion.V1,
+      [FuseV1Options.RunAsNode]: false,
+      [FuseV1Options.EnableCookieEncryption]: true,
+      [FuseV1Options.EnableNodeOptionsEnvironmentVariable]: false,
+      [FuseV1Options.EnableNodeCliInspectArguments]: false,
+      [FuseV1Options.EnableEmbeddedAsarIntegrityValidation]: true,
+      [FuseV1Options.OnlyLoadAppFromAsar]: true,
+    }),
+  ],
+};
+```
+
+
+### Linux 进行打包
+
+```bash
+# 创建资源文件
+npm run ebuild
+# 预打包, 运行 electron-forge package 命令，文件输出到了 ./out/{项目命名}
+npm run efpackage
+# 打包, 运行 electron-forge make 命令，文件输出到了 out/make 中
+npm run efmake
+```
+
+打包完成后可以安装体验一下(ubuntu)  
+
+```bash
+# 资源文件会安装到 /usr/lib/{项目命名} 中
+sudo dpkg -i 安装包.deb
+```
+
+
+## Electron 打 Windows 包
+
+^f52b23
 
 Windows 的 Election 打包需要用到 Windows 设备来进行打包，虽然官方提供了Linux+Wine的打包方式，但是我尝试的时候，发现打出来的包放到Windows下不能运行，以及安装Wine也是一大坑，出于稳定性和方便考虑，直接用Windows来进行打包  
 
@@ -368,10 +657,23 @@ yarn install
 
 ### 配置 `electron-forge` 
 
+先安装 `electron-forge`  
+
+```bash
+# 先进入工程根目录，然后再执行命令
+npm install --save-dev @electron-forge/cli
+```
+
+构建打包配置，默认同意选项即可，如果询问是否向 package.json 添加命令的时候，选否
+```bash
+npm exec --package=@electron-forge/cli -c "electron-forge import"
+```
+
+
 在 `makers -> @electron-forge/maker-zip -> platforms` 中添加 `win32` 以便能打包win程序压缩包。  
 
 ```json
-// forge.config.json
+// forge.config.js
 
 const { FusesPlugin } = require('@electron-forge/plugin-fuses');
 const { FuseV1Options, FuseVersion } = require('@electron/fuses');
@@ -442,12 +744,12 @@ module.exports = {
   ...
   "scripts": {
     "edev": "concurrently -n \"NEXT,ELECTRON\" -c \"yellow,blue\" --kill-others \"next dev\" \"electron .\"",
-    "ebuild": "next build && next-export-fixer",
+    "ebuild": "npm run build",
     "estart": "electron .",
     "efmake": "electron-forge make",
     "efstart": "electron-forge start",
     "efpackage": "electron-forge package",
-    "efbuild": "next build && next-export-fixer && electron-forge make",
+    "efbuild": "npm run ebuild && electron-forge make",
     ...
   }
 ...
@@ -469,8 +771,6 @@ npm run efmake
 在 `out/{项目名称}` 目录下也能看到预打包的程序文件。  
 
 如果要进行调试开发，需要注意的是Windows运行node可能不是2300端口，可能需要手动指定环境变量PORT为2300端口再运行。  
-
-
 # 其他功能
 
 ## 隐藏标题菜单方法
@@ -488,7 +788,7 @@ Menu.setApplicationMenu(null)
 
 # 碰到的坑
 
-## Next.js导出后找不到资源文件
+## Next.js静态导出后找不到资源文件
 
 因为Next.js导出的资源文件默认使用 `/` 进行开头索引，在Electron进行文件加载的时候，会以为是从根目录找文件。  
 
@@ -528,15 +828,17 @@ win.once('ready-to-show', (event) => {
 Electron打包的时候，会把源码也一起打包进去，也会包括项目的 `node_modules` 文件夹，因此会非常大。  
 如果依赖的模块在 `package.json` 中定义为属于 `devDependencies` 而不是 `dependencies` ， 则打包的时候，Electron会自动剔除 `devDependencies` 中的包，否则会一起打包到源码中。  
 
-因为文中使用的是直接加载已经构建好的静态文件的方法，并不需要依赖模块，因此可以完全把 `node_modules` 给屏蔽掉，不进行打包。  
+也就是说，把不需要运行的时候使用的包放到`devDependencies`可以减少空间占用。  
+
+使用文中静态路由项目构建方法的时候，并不需要依赖模块，这个时候可以完全把 `node_modules` 给屏蔽掉，不进行打包，根据 Next.js 官方的说明，动态路由方式也支持（未验证）。   
 具体操作方法如下：  
 
-修改 `forge.config.json` 把 `node_modules` 添加进 `packagerConfig.ignore` 中，就能在打包的时候过滤掉`node_modules` 文件夹。  
+修改 `forge.config.js` 把 `node_modules` 添加进 `packagerConfig.ignore` 中，就能在打包的时候过滤掉`node_modules` 文件夹。  
 然后把构建好的网页静态文件都通过 `packagerConfig.extraResource` 导出，这样的话，就能直接在 `main.js` 中通过 `process.resourcesPath` + 文件的方式访问到。  理论上不导出也可以，不过需要适配一下 asar 的路径；  
 Electron 打包的时候，会把默认把源码拷贝到 app.asar 文件里面，asar 打包文件可以在 `main.js` 通过 ``process.resourcesPath`` + app.asar  方式访问到，官方有提供里面资源的调用方法。    
 
 ```json
-// forge.config.json
+// forge.config.js
 
 module.exports = {
   packagerConfig: {
@@ -637,6 +939,123 @@ cnpm install electron --save-dev
 
 npm install -g yarn
 yarn install
+```
+
+## WSL2 和 Windows 的 Electron 冲突
+
+因为 WSL2 默认会引入 Windows 的环境变量，在 Windows 下全局安装了 Electron 后，再在WSL2中使用的话，会调用Windows的 Electron。  
+
+验证方法也比较简单，wsl中直接启动Electron，看是不是exe程序。  
+
+```
+electron
+```
+
+解决办法也很简单，就是修改环境变量。  
+
+> 方法1. 配置 Windows 用户文件夹下的 `C:\Users\{你的用户名}\.wslconfig` 添加配置不同步 Windows 环境变量：  
+
+```ini
+[interop]
+appendWindowsPath = false
+```
+
+但是这个方法会把Windows所有环境变量剔除。  
+
+> 方法2. 过滤环境变量中Windows的npm路径, 可添加到 `/etc/profile` 中全局启用：  
+
+```bash
+export PATH=$(p=$(echo $PATH | tr ":" "\n" | grep -v "AppData/Roaming/npm" | tr "\n" ":"); echo ${p%:})
+```
+
+## `electron-forge import` 很慢
+
+自动安装很慢的话，可以选择手动安装。  
+
+> 手动配置 `package.json`  
+
+```json
+// package.json
+
+   ...
++  "main": "main.js",
++  "author": "observerkei",
++  "description": "Test App",
++  "license": "MIT",
+   "scripts": {
++    "efmake": "electron-forge make",
++    "efpackage": "electron-forge package", 
+     ...
+   },
+   "devDependencies": {
++    "@electron-forge/cli": "^7.5.0",
++    "@electron-forge/maker-deb": "^7.5.0",
++    "@electron-forge/maker-rpm": "^7.5.0",
++    "@electron-forge/maker-squirrel": "^7.5.0",
++    "@electron-forge/maker-zip": "^7.5.0",
++    "@electron-forge/plugin-auto-unpack-natives": "^7.5.0",
++    "@electron-forge/plugin-fuses": "^7.5.0",
++    "@electron/fuses": "^1.8.0",
+     ...
+   }
+   ...
+```
+
+> 手动添加文件 `forge.config.js`  
+
+```json
+// forge.config.js
+
+const { FusesPlugin } = require('@electron-forge/plugin-fuses');
+const { FuseV1Options, FuseVersion } = require('@electron/fuses');
+
+module.exports = {
+  packagerConfig: {
+    asar: true,
+    ignore: [
+    ],
+    extraResource: [
+    ],
+  },
+  rebuildConfig: {},
+  makers: [
+    {
+      name: '@electron-forge/maker-squirrel',
+      config: {},
+    },
+    {
+      name: '@electron-forge/maker-zip',
+      platforms: ['darwin'],
+    },
+    {
+      name: '@electron-forge/maker-deb',
+      config: {},
+    }
+  ],
+  plugins: [
+    {
+      name: '@electron-forge/plugin-auto-unpack-natives',
+      config: {},
+    },
+    // Fuses are used to enable/disable various Electron functionality
+    // at package time, before code signing the application
+    new FusesPlugin({
+      version: FuseVersion.V1,
+      [FuseV1Options.RunAsNode]: false,
+      [FuseV1Options.EnableCookieEncryption]: true,
+      [FuseV1Options.EnableNodeOptionsEnvironmentVariable]: false,
+      [FuseV1Options.EnableNodeCliInspectArguments]: false,
+      [FuseV1Options.EnableEmbeddedAsarIntegrityValidation]: true,
+      [FuseV1Options.OnlyLoadAppFromAsar]: true,
+    }),
+  ],
+};
+```
+
+安装依赖：  
+
+```bash
+cnpm i
 ```
 
 

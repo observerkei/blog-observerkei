@@ -166,7 +166,7 @@ npm i -D capacitor-set-version
 修改版本号为`0.1`，构建版本为`1`  
 
 ```bash
-# Set version to 1.2.3 and build number to 10 on current folder.
+# Set version to 0.1.1 and build number to 10 on current folder.
 npx capacitor-set-version set:android -v 0.1 -b 1
 
 # set:android 安卓端
