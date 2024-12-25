@@ -21,7 +21,7 @@ Next.js 是一个用 React 来实现的框架，可以简单理解为 React 的�
 
 Electron 支持 URL 加载和文件加载两种方式，URL加载就是你构建好Electron应用后，给他传入一个URL，他只显示你这个URL内容。  
 文件加载就是传入HTML文件，Electron通过文件渲染内容。  
-本文构建的时候，提供了 Electron 文件加载方式，因此理论上来说，只要能进行静态导出，就能兼容各种前端框架。  
+本文构建的时候，提供了 Electron 文件加载方式，因此理论上来说，只要能进行静态导出，就能兼容各种前端框架。同时也提供了 Next.js 动态路由的加载的方式。  
 
 通过使用Electron，可以实现 Linux/Windows/MacOS 三平台桌面端应用构建。  
 
@@ -381,7 +381,7 @@ sudo dpkg -i 安装包.deb
 
 ## Electron 打 Windows 包
 
-使用 [[#^dfb59d||动态路由项目 Electron 打 Linux 包的配置]] 参考 [[#^f52b23|静态路由项目 Electron 打 Windows 包]] 方法，进行打包。  
+使用 [[#^dfb59d|动态路由项目 Electron 打 Linux 包的配置]] 参考 [[#^f52b23|静态路由项目 Electron 打 Windows 包]] 方法，进行打包。  
 
 
 # 静态路由项目适配 Electron
