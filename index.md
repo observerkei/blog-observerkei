@@ -15,7 +15,7 @@ description: This is the Blog page maintained by Observerkei.
 
 
 <div>
-  <iframe id="dino-item-iframe"  src="https://blog.observerkei.top/static/dino" frameborder="0" scrolling="no" width="100%" height="180px" loading="lazy" style="overflow: hidden; margin: 0;"  >
+  <iframe id="dino-item-iframe"  src="https://blog.observerkei.top/static/dino" frameborder="0" scrolling="no" width="100%" height="185px" loading="lazy" style="overflow: hidden; margin: 0;"  >
   </iframe>
 </div>
 
