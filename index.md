@@ -13,10 +13,11 @@ description: This is the Blog page maintained by Observerkei.
   
 ---
 
+
 <div>
-<iframe src="https://mhasbini.com/miscs/react-chrome-dino-demo/index.html" frameborder="0" scrolling="no" width="100%" height="220px" loading="lazy" style="overflow: hidden;"  ></iframe>
+  <iframe id="dino-item-iframe"  src="https://blog.observerkei.top/static/dino" frameborder="0" scrolling="no" width="100%" height="180px" loading="lazy" style="overflow: hidden; margin: 0;"  >
+  </iframe>
 </div>
- 
 
 
 [_____](https://observerkei.top/)
