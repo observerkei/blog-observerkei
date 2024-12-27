@@ -168,7 +168,7 @@ const isDesktop = useMediaQuery({ minWidth: desktopMinWidth });
 ## `FlexBox` 布局
 
 盒子里面装载成员，而成员自己也可以作为盒子装在自己的子成员，也就是`FlexBox`支持嵌套使用.  
-> 尽量减少嵌套数量，嵌套数量越多，Bug越多，越不可控，并且，尽量传到Gird布局。  
+> 尽量减少嵌套数量，嵌套数量越多，维护越困难，Bug越容易增多，越不可控，尽量过度到Gird布局。  
 ### 盒子参数
 
 | 参数                              | 说明                         |
