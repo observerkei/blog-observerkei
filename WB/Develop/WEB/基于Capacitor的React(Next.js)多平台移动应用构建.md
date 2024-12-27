@@ -5,6 +5,7 @@ tags:
   - Note
 draft: false
 permalink: /31
+comments: true
 ---
 # 简介
 

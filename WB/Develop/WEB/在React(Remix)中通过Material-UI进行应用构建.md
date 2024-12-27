@@ -5,6 +5,7 @@ tags:
   - Note
 draft: false
 permalink: /34
+comments: true
 ---
 ![[WB/Develop/WEB/file/remix-matrial-ui-favorite.gif]]
 

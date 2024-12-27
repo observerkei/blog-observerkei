@@ -5,6 +5,7 @@ tags:
   - Note
 draft: false
 permalink: /15
+comments: true
 ---
 # `CH340` 简介
 

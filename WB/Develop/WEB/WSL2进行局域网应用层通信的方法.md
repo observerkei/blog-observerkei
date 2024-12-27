@@ -5,6 +5,7 @@ tags:
   - Note
 draft: false
 permalink: /7
+comments: true
 ---
 # 配置方法
 
