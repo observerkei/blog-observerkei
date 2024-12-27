@@ -6,6 +6,8 @@ tags:
 draft: false
 permalink: /34
 ---
+![[WB/Develop/WEB/file/remix-matrial-ui-favorite.gif]]
+
 # 简介
 
 本文介绍了使用 React(Remix) v2.51.1 SPA + Material UI v6.2.0 进行界面设计的案例.    
@@ -161,11 +163,13 @@ const isMobile = useMediaQuery({ maxWidth: mobileMaxWidth });
 const isDesktop = useMediaQuery({ minWidth: desktopMinWidth });
 ```
 
-# CSS `FlexBox` 布局简介
+# CSS简介
+
+## `FlexBox` 布局
 
 盒子里面装载成员，而成员自己也可以作为盒子装在自己的子成员，也就是`FlexBox`支持嵌套使用.  
 > 尽量减少嵌套数量，嵌套数量越多，Bug越多，越不可控，并且，尽量传到Gird布局。  
-## 盒子参数
+### 盒子参数
 
 | 参数                              | 说明                         |
 | ------------------------------- | -------------------------- |
@@ -173,8 +177,9 @@ const isDesktop = useMediaQuery({ minWidth: desktopMinWidth });
 | `flexDirection: column`         | 修改主轴方向为竖直方向。默认是`row`（水平方向） |
 | `justifyContent: space-between` | 主轴方向上两端对齐                  |
 | `alignItems: stretch`           | 交叉轴方向上占满剩余空间               |
+|                                 |                            |
 
-## 成员参数
+### 成员参数
 
 | 参数                  | 说明          |
 | ------------------- | ----------- |
@@ -182,6 +187,33 @@ const isDesktop = useMediaQuery({ minWidth: desktopMinWidth });
 | `height: 100%`      | 占满父组件剩余高度   |
 | `width: 100%`       | 占满父组件剩余宽度   |
 
+## `iframe` 设置透明背景
+
+1. 设置iframe是透明的，注意要有 `color-scheme: light;` 才能设置透明
+
+```html
+<div>
+  <iframe 
+    id="dino-item-iframe" 
+    src="src-url" 
+    frameborder="0" 
+    scrolling="no" 
+    width="100%" 
+    height="185px" 
+    loading="lazy" 
+    style="overflow: hidden; margin: 0; background: transparent; color-scheme: light;" 
+  >
+  </iframe>
+</div>
+```
+
+2. 设置 `src-url` 的页面是透明的
+
+```css
+body {
+  background: transparent;
+}
+```
 # Material UI 的一些组件介绍
 
 | 组件      | 备注                                                                       |
@@ -746,6 +778,10 @@ http.createServer({ root: rootPath, proxy: creatHomeURL(port) });
 server.listen(port);
 ```
 
+## `iframe`无法设置透明背景
+
+因为`iframe`缺少了 `color-scheme: light;` 的 `style` 选项导致的。  
+具体用法看 [[#`iframe` 设置透明背景|`iframe` 设置透明背景]]  
 
 # 一个成品演示
 
