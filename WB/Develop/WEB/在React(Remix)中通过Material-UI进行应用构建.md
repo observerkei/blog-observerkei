@@ -788,6 +788,8 @@ server.listen(port);
 
 ![[WB/Develop/WEB/file/remix-matrial-ui-favorite.gif]]
 
+[Release Example: Favorite collection v0.1.0](https://github.com/observerkei/vite-remix-spa-material-ui/releases/tag/Example-FavoriteCollection-v0.1.0)
+
 ## 功能简介
 
 - 可以修改默认主页，如果不是主页，则修改按钮默认隐藏
