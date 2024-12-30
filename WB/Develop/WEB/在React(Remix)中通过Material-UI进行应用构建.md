@@ -9,6 +9,7 @@ comments: true
 ---
 ![[WB/Develop/WEB/file/remix-matrial-ui-favorite.gif]]
 
+[Release Example: Favorite collection v0.1.0](https://github.com/observerkei/vite-remix-spa-material-ui/releases/tag/Example-FavoriteCollection-v0.1.0)  
 # 简介
 
 本文介绍了使用 React(Remix) v2.51.1 SPA + Material UI v6.2.0 进行界面设计的案例.    
@@ -169,7 +170,7 @@ const isDesktop = useMediaQuery({ minWidth: desktopMinWidth });
 ## `FlexBox` 布局
 
 盒子里面装载成员，而成员自己也可以作为盒子装在自己的子成员，也就是`FlexBox`支持嵌套使用.  
-> 尽量减少嵌套数量，嵌套数量越多，维护越困难，Bug越容易增多，越不可控，尽量过度到Gird布局。  
+> 尽量减少嵌套数量，嵌套数量越多，维护越困难，Bug越容易增多，越不可控，尽量过渡到Gird布局。  
 ### 盒子参数
 
 | 参数                              | 说明                         |
