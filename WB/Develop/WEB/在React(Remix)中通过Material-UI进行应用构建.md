@@ -9,7 +9,8 @@ comments: true
 ---
 ![[WB/Develop/WEB/file/remix-matrial-ui-favorite.gif]]
 
-[Release Example: Favorite collection v0.1.0](https://github.com/observerkei/vite-remix-spa-material-ui/releases/tag/Example-FavoriteCollection-v0.1.0)  
+[Release Example: Favorite collection v0.1.0](https://github.com/observerkei/vite-remix-spa-material-ui/releases/tag/Example-FavoriteCollection-v0.1.0)
+
 # 简介
 
 本文介绍了使用 React(Remix) v2.51.1 SPA + Material UI v6.2.0 进行界面设计的案例.    
@@ -655,10 +656,9 @@ npm run emake
 
 # 碰到的问题
 
-## 黑色主题下画面闪白一下后才黑屏
+## Vite Remix SPA 现阶段还不支持 Material UI 
 
-解决方法是一开始的时候，就通过css设置背景为黑色，然后通过主题控制背景。  
-模板已经封装好黑白主题的应用，可以直接使用。
+就 Material UI 官方发布的非Vite版本做迁移到 Vite Remix 中，根据其他人的提示进行主题样式适配，删除了`entry.server.tsx`，已经做成模板：[Vite Remix v2.51.1 SPA material UI v6.2.0 template](https://github.com/observerkei/vite-remix-spa-material-ui)   
 
 ## Remix 不支持导入 ES modules
 
@@ -680,6 +680,11 @@ export default defineConfig({
 	},
 });
 ```
+
+## 黑色主题下画面闪白一下后才黑屏
+
+解决方法是一开始的时候，就通过css设置背景为黑色，然后通过主题控制背景。  
+模板已经封装好黑白主题的应用，可以直接使用。
 
 ## 移动端Chrome按下回车会切换焦点而不是提交
 
@@ -789,7 +794,7 @@ server.listen(port);
 
 ![[WB/Develop/WEB/file/remix-matrial-ui-favorite.gif]]
 
-[Release Example: Favorite collection v0.1.0](https://github.com/observerkei/vite-remix-spa-material-ui/releases/tag/Example-FavoriteCollection-v0.1.0)
+[Release Example: Favorite collection v0.1.0](https://github.com/observerkei/vite-remix-spa-material-ui/releases/tag/Example-FavoriteCollection-v0.1.0)  
 
 ## 功能简介
 
