@@ -26,6 +26,6 @@ draft: true
 
 ## 本项目的构建
 
-[公网发布博客的方案](https://blog.observerkei.top/WB/Develop/CPP-BEA/9.3-%E6%9E%84%E5%BB%BA%E5%92%8C%E5%85%AC%E7%BD%91%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/9.3.2-%E4%BD%8E%E6%88%90%E6%9C%AC%E5%85%AC%E7%BD%91%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%96%B9%E6%A1%88)
+[公网发布博客的方案](https://blog.observerkei.top/10)
 
 [*****](./index.md)
