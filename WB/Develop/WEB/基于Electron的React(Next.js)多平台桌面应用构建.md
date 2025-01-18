@@ -38,7 +38,9 @@ Electron 支持 URL 加载和文件加载两种方式，URL加载就是你构建
 - [spa5k/nextjs_approuter_electron: This is a template for building Electron apps with Next.js App router, SSR and Server Components](https://github.com/spa5k/nextjs_approuter_electron)
 - [next.config.js Options: output | Next.js](https://nextjs.org/docs/app/api-reference/next-config-js/output#automatically-copying-traced-files)
 
-# 构建React(Next.js)应用
+# 构建React(Next.js)应用(可选)
+
+这个操作不是必须的，如果是已有React(Next.js)项目进行构建，则可跳过这一步。  
 
  React(Next.js) 应用需要node.js环境，需要先在设备上安装node.js运行环境，安装好后，设备将支持`node`和`npm`命令。  
 
@@ -62,6 +64,8 @@ npm install -g n
 n lts
 ```
 
+## 动态路由方式
+
 创建 React(Next.js) 应用  
 
 ```bash
@@ -72,6 +76,12 @@ npx create-nect-app next-electron-test
 # 启动应用
 npx start
 ```
+
+## 静态路由方式
+
+[Upgrading: Single-Page Apps | Next.js](https://nextjs.org/docs/app/building-your-application/upgrading/single-page-applications#examples)  
+
+
 
 # 安装 Electron
 
