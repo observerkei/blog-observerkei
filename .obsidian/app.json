@@ -6,5 +6,6 @@
   "strictLineBreaks": true,
   "readableLineLength": false,
   "showLineNumber": true,
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "useTab": false
 }
