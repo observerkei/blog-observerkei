@@ -422,6 +422,8 @@ function Favorite({ contact, handleToggle, labelId }: params) {
 
 这里只用到了展示功能，如果要调用Electorn的API，有其他开源项目可以解决这个问题，如果是已有SPA项目使用了这个方法，那么需要再额外写Electron的API，然后用单独服务去运行，相当于Electron作为API服务端，而页面显示的部分分为展示端。这样的话，为了API安全性，还需要在调用处做安全校验才行。  
 
+具体可以参考：[在 Electron 的 `preload.js` 通过IPC将API暴露给渲染进程。](https://www.electronjs.org/docs/latest/tutorial/ipc#2-expose-ipcrendereron-via-preload)  
+
 ## `package.json`
 
 ```javascript
