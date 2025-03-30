@@ -271,8 +271,6 @@ npm run edev
 
 ## Electron 打 Linux 包
 
-^dfb59d
-
 官方推荐使用 `electron-forge` 进行打包。  
 
 ### 配置 `electron-forge`
@@ -392,7 +390,7 @@ sudo dpkg -i 安装包.deb
 
 ## Electron 打 Windows 包
 
-使用 [[#^dfb59d|动态路由项目 Electron 打 Linux 包的配置]] 参考 [[#^f52b23|静态路由项目 Electron 打 Windows 包]] 方法，进行打包。  
+使用 [[#Electron 打 Linux 包|Electron 打 Linux 包]] 参考 [[#Electron 打 Windows 包|Electron 打 Windows 包]] 方法，进行打包。  
 
 
 # 静态路由项目适配 Electron
@@ -638,7 +636,6 @@ sudo dpkg -i 安装包.deb
 
 ## Electron 打 Windows 包
 
-^f52b23
 
 Windows 的 Election 打包需要用到 Windows 设备来进行打包，虽然官方提供了Linux+Wine的打包方式，但是我尝试的时候，发现打出来的包放到Windows下不能运行，以及安装Wine也是一大坑，出于稳定性和方便考虑，直接用Windows来进行打包  
 
@@ -870,7 +867,7 @@ module.exports = {
 
 ## Linux 打 Windows 包异常(Wine 安装方法)
 
-最后为了打Electron包使用的方法是在Windows下进行打包： [[#Windows 打包]]  
+最后为了打Electron包使用的方法是在Windows下进行打包： [[#Windows 运行打包]]  
 
 下面记录一下踩坑过程。
 
@@ -918,7 +915,7 @@ sudo apt-get install mono-complete
 Failed to find file integrity info for resources\app.asar 
 ```
 
-手动检查`app.asar`文件发现文件正常，根据报错无法得出更多结论，考虑到如果深入研究源码会占用更多时间，在询问他人建议后，遂尝试使用Windows进行打包： [[#Windows 打包]]  
+手动检查`app.asar`文件发现文件正常，根据报错无法得出更多结论，考虑到如果深入研究源码会占用更多时间，在询问他人建议后，遂尝试使用Windows进行打包： [[#Windows 运行打包]]    
 
 
 ## Windows 下 npm install 运行报错
