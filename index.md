@@ -3,7 +3,7 @@ title: 🎉 Welcome to the Blog of observerkei
 date: 2024-01-31
 draft: false
 permalink: /1
-new permalink: /45
+new permalink: /47
 description: This is the Blog page maintained by Observerkei.
 comments: false
 ---
